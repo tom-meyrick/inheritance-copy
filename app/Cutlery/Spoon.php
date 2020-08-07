@@ -6,17 +6,17 @@ namespace App\Cutlery;
 
 class Spoon 
 {
-    private $scoop = 0;
+    protected $numScoops = 0;
 
     public function scoop() : Spoon
     {
-       $this->scoop += 1;
+       $this->numScoops += 1;
        return $this;
     }
 
     public function howManyScoops() : int
     {
-       return $this->scoop;
+       return $this->numScoops;
     }
 }
 

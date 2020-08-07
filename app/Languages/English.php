@@ -7,7 +7,6 @@ namespace App\Languages;
 class English extends Language
 {
     protected $name = "English"; 
-    protected $hello = "Hello";
 
     public function name()  : string
     {
@@ -16,6 +15,6 @@ class English extends Language
 
     public function hello() : string
     {
-        return $this->hello;
+        return "Hello";
     }
 }
